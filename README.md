@@ -46,17 +46,18 @@ BUILD JAVASCRIPT in app.js
 // import functions and grab DOM elements
 ✅ declare 3 dropdown variables
 ✅ declare 3 elements for city div
--declare report element 
--declare slogans element
--declare slogan input 
--declare slogans button 
+✅ declare report element 
+✅ declare slogans element
+✅ declare slogan input 
+✅ declare slogans button 
 
 // set state for how many times the user changes the type, environment, and apocalypse using let 
--type count
--environment count
--apocalypse count
+✅ type count
+✅ environment count
+✅ apocalypse count
+
 //set state for slogans with empty string
--slogan count
+✅ slogan 
 
 //event listeners for type dropdown on 'change'
 -get value of type dropdown (log value of dropdown to the console)

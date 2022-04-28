@@ -15,10 +15,12 @@ const sloganEl = document.getElementById('slogan-element');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 
-
-console.log(sloganButton);
-
 // let state
+let typeCount = 0;
+let environmentCount = 0;
+let apocalypseCount = 0
+
+let slogans = [];
 
 // set event listeners 
   // get user input
