@@ -1,29 +1,49 @@
 /* add home page styles here */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+    font-family: 'Courier Prime', monospace;
+}
+
 .city {
-    border-width: 2px;
-    border-style: solid;
-    border-color:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+    width: 900px;
+    grid-gap: 50px 50px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
-#stats {
-    border-width: 2px;
-    border-style: solid;
-    border-color:black;
-}
-.picker {
-    border-width: 2px;
-    border-style: solid;
-    border-color:black;
-}
+.bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 
-.type-div {
-
+#type {
+    background-image: url('../assets/urban.jpeg');
+    border-radius: 25px;
+    background-repeat: repeat;
 }
 
-.environment-div {
-
+#environment {
+    background-image: url('../assets/jungle.jpeg');
+    border-radius: 25px;
+    background-repeat: repeat;
 }
 
-.disaster-div {
+#apocalypse {
+    background-image: url('../assets/lightning.jpeg');
+    border-radius: 25px;
+    background-repeat: repeat;
+}
+
+#report {
+    justify-content: left;
+}
+
+#slogan-div {
 
 }

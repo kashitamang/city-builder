@@ -37,3 +37,5 @@ BUILD HTML
 -reports div
 
 -grab images
+-assign to css property via ID's
+-

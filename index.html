@@ -12,13 +12,14 @@
     <title>Document</title>
 </head>
 <header>
-    <h2>build the perfect city</h2>
+    <h2>perfect city mood</h2>
 </header>
 <body>
     <main>
+        <br>
         <div class="picker">
             <label>
-                city type
+                city
                 <select id="type-dropdown">
                     <option value="urban">urban</option>
                     <option value="suburban">suburban</option>
@@ -26,19 +27,19 @@
                 </select>
             </label>
             <label>
-                climate
+                environment
                 <select id="environment-dropdown">
                     <option value="jungle">jungle</option>
                     <option value="desert">desert</option>
-                    <option value="arctic">arctic</option>
+                    <option value="mountain">mountain</option>
                 </select>
             </label>
-                natural disasters
+                apocalypse
             <label>
-                <select id="disaster-dropdown">
-                    <option value="tornado">tornado</option>
-                    <option value="monsoon">monsoon</option>
-                    <option value="snowpocalypse">snowpocalypse</option>
+                <select id="apocalypse-dropdown">
+                    <option value="lightning">lightning</option>
+                    <option value="snow">snow</option>
+                    <option value="ibs">chronic ibs</option>
                 </select>
             </label>
             <label>
@@ -47,16 +48,19 @@
                 <button id="slogan-button">add</button>
             </label>
         </div>
-        <br>
+        <p>your mood</p>
         <div>
-            <div class="city">your city</div>
-                <div class="type-div" id="type"></div>
-                <div class="environment-div" id="type"></div>
-                <div class="disaster-div" id="type"></div>
+            <div class="city">
+                <div class="type-div bg" id="type"></div>
+                <div class="environment-div bg" id="environment"></div>
+                <div class="apocalypse-div bg" id="apocalypse"></div>
+            </div>
         </div>
-        <br>
         <div id="stats">
+            <br>
+            <br>
             <div id="report">report:</div>
+            <br><br>
             <div id="slogan-div">slogan:</div>
         </div>
     </main>
