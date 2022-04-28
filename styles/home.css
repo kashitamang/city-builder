@@ -1,1 +1,29 @@
 /* add home page styles here */
+.city {
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+}
+
+#stats {
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+}
+.picker {
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+}
+
+.type-div {
+
+}
+
+.environment-div {
+
+}
+
+.disaster-div {
+
+}
