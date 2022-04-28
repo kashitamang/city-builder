@@ -17,9 +17,10 @@
 <body>
     <main>
         <br>
+        <h3>choose your perfect...</h3>
         <div class="picker">
             <label>
-                city
+                city type
                 <select id="type-dropdown">
                     <option value="urban">urban</option>
                     <option value="suburban">suburban</option>
@@ -34,7 +35,7 @@
                     <option value="mountain">mountain</option>
                 </select>
             </label>
-                apocalypse
+                apocalypse fate
             <label>
                 <select id="apocalypse-dropdown">
                     <option value="lightning">lightning</option>
@@ -44,12 +45,12 @@
             </label>
             <label>
                 add a slogan
-                <input id="slogan-input">
+                <input id="slogan-input" >
                 <button id="slogan-button">add</button>
             </label>
         </div>
-        <p>your mood</p>
-        <div>
+        <p>your mood is...</p>
+        <div> 
             <div class="city">
                 <div class="type-div bg" id="type"></div>
                 <div class="environment-div bg" id="environment"></div>
@@ -57,11 +58,10 @@
             </div>
         </div>
         <div id="stats">
-            <br>
-            <br>
-            <div id="report-element">report:</div>
             <br><br>
-            <div id="slogan-element">slogan:</div>
+            <div id="slogan-element" class="disappear"></div>
+            <br><br>
+            <div id="report-element"></div>
         </div>
     </main>
     <footer>

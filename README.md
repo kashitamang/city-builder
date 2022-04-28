@@ -60,25 +60,25 @@ BUILD JAVASCRIPT in app.js
 ✅ slogan 
 
 //event listeners for type dropdown on 'change'
--get value of type dropdown (log value of dropdown to the console)
--update the DOM for the typecount state
--update the DOM for the type picture (use style.backgroundImage on typeEl)
--update the state to show the new count of types by calling the displayStats() function 
+✅get value of type dropdown (log value of dropdown to the console)
+✅update the DOM for the typecount state
+✅update the DOM for the type picture (use style.backgroundImage on typeEl)
+✅update the state to show the new count of types by calling the ✅displayStats() function 
 
 //event listeners for environment dropdown on 'change'
--get value of environment dropdown (log value of dropdown to the console)
--update the DOM for the environmentcount state
--update the DOM for the type picture (use style.backgroundImage on environmentEl)
--update the state to show the new count of types by calling the displayStats() function 
+✅get value of environment dropdown (log value of dropdown to the console)
+✅update the DOM for the environmentcount state
+✅update the DOM for the type picture (use style.backgroundImage on environmentEl)
+✅update the state to show the new count of types by calling the ✅displayStats() function 
 
 //event listeners for apocalypse dropdown on 'change'
--get value of apocalypse dropdown (log value of dropdown to the console)
--update the DOM for the apocalypsecount state
--update the DOM for the type picture (use style.backgroundImage on apocalypseEl)
--update the state to show the new count of types by calling the displayStats() function 
+✅get value of apocalypse dropdown (log value of dropdown to the console)
+✅update the DOM for the apocalypsecount state
+✅update the DOM for the type picture (use style.backgroundImage on apocalypseEl)
+✅update the state to show the new count of types by calling the ✅displayStats() function 
 
 //event listeners for button on 'click'
--get value of slogan
+✅get value of slogan
 -push that value to new array in state
 -clear out the forms input.value by assigning to an empty string
 -update the dom to show the new slogans byt calling displaySlogans() function;
