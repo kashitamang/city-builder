@@ -43,13 +43,13 @@ BUILD CSS in home.css
 
 BUILD JAVASCRIPT in app.js
 
-<!-- // import functions and grab DOM elements
--declare 3 dropdown variables
--declare 3 elements for city div
+// import functions and grab DOM elements
+✅ declare 3 dropdown variables
+✅ declare 3 elements for city div
 -declare report element 
 -declare slogans element
 -declare slogan input 
--declare slogans button  -->
+-declare slogans button 
 
 // set state for how many times the user changes the type, environment, and apocalypse using let 
 -type count
