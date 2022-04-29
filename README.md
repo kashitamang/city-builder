@@ -63,31 +63,31 @@ BUILD JAVASCRIPT in app.js
 ✅get value of type dropdown (log value of dropdown to the console)
 ✅update the DOM for the typecount state
 ✅update the DOM for the type picture (use style.backgroundImage on typeEl)
-✅update the state to show the new count of types by calling the ✅displayStats() function 
+✅update the state to show the new count of types by calling the displayStats() function 
 
 //event listeners for environment dropdown on 'change'
 ✅get value of environment dropdown (log value of dropdown to the console)
 ✅update the DOM for the environmentcount state
 ✅update the DOM for the type picture (use style.backgroundImage on environmentEl)
-✅update the state to show the new count of types by calling the ✅displayStats() function 
+✅update the state to show the new count of types by calling the displayStats() function 
 
 //event listeners for apocalypse dropdown on 'change'
 ✅get value of apocalypse dropdown (log value of dropdown to the console)
 ✅update the DOM for the apocalypsecount state
 ✅update the DOM for the type picture (use style.backgroundImage on apocalypseEl)
-✅update the state to show the new count of types by calling the ✅displayStats() function 
+✅update the state to show the new count of types by calling the displayStats() function 
 
 //event listeners for button on 'click'
 ✅get value of slogan
--push that value to new array in state
--clear out the forms input.value by assigning to an empty string
--update the dom to show the new slogans byt calling displaySlogans() function;
+✅push that value to new array in state
+✅clear out the forms input.value by assigning to an empty string
+✅update the dom to show the new slogans byt calling displaySlogans() function;
 
 //create displayStats() Function
--text content of the report el to tell thr use ho many times they have changed a piece of state using template literals 
+✅text content of the report el to tell thr use ho many times ✅they have changed a piece of state using template literals 
 
 //create displaySlogans() Function
--clear out DOM for the currently displayed slogans 
--loop through each slogan in state 
--for each new slogan create and html element with the slogan as its text content
--append that HTML element to the cleared-out DOM
+✅clear out DOM for the currently displayed slogans 
+✅loop through each slogan in state 
+✅for each new slogan create and html element with the slogan as its text content
+✅append that HTML element to the cleared-out DOM

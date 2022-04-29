@@ -18,7 +18,7 @@ const sloganButton = document.getElementById('slogan-button');
 // let state
 let typeCount = 0;
 let environmentCount = 0;
-let apocalypseCount = 0
+let apocalypseCount = 0;
 
 let slogans = [];
 
@@ -92,7 +92,7 @@ function displaySlogans() {
         console.log(slogans);
 //for each slogan create an HTML element with the catchphrase as its text content
         const newSlogans = document.createElement('div');
-//apend that HTML element to the cleared-out DOM 
+//append that HTML element to the cleared-out DOM 
         document.getElementById('slogan-element').appendChild(newSlogans);
         newSlogans.textContent = sloganInput;
     }
