@@ -41,6 +41,20 @@
     border-radius: 15px;
 }
 
+.box {
+    background-color:rgb(118, 118, 118);
+    color: chartreuse;
+    padding: 2px 50px 50px 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+.blink {
+    -webkit-animation: blink 1s step-end infinite;
+    -moz-animation: blink 1s step-end infinite;
+    -o-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
 
 input {
     background-color: white;
