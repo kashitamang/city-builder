@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Perfect City Mood</title>
+    <title>create your own city</title>
 </head>
 <header>
-    <h2>perfect city mood</h2>
+    <h2>create your own city</h2>
 </header>
 <body>
     <main>
         <br>
-        <h3>choose your perfect...</h3>
+        <h3>choose your options...</h3>
         <div class="picker">
             <label>
                 city type
@@ -26,6 +26,7 @@
                     <option value="suburban">suburban</option>
                     <option value="country">country</option>
                 </select>
+                <br>
             </label>
             <label>
                 environment
@@ -34,6 +35,7 @@
                     <option value="desert">desert</option>
                     <option value="mountain">mountain</option>
                 </select>
+                <br>
             </label>
                 apocalypse fate
             <label>
@@ -42,14 +44,23 @@
                     <option value="snow">snow</option>
                     <option value="ibs">chronic ibs</option>
                 </select>
+                <br>
             </label>
             <label>
-                add city slogan
+                city slogan
                 <input type="text" id="slogan-input" >
                 <button id="slogan-button">add</button>
             </label>
+            <br>
+            <label>
+                city name
+                <input type="text" id="name-input" >
+                <button id="name-button">add</button>
+            </label>
         </div>
-        <p>your city's mood is...</p>
+        <br>
+        <h2 id="name-element" class="welcome"></h2>
+        <br>
         <div> 
             <div class="city">
                 <div class="type-div bg" id="type"></div>
@@ -58,13 +69,9 @@
             </div>
         </div>
         <br>
-        <div>
-            <p class="blink">incoming data...</p>
-        </div>
         <div id="stats">
             <br><br>
-            <div id="slogan-element" class="box"></div>
-            <br><br>
+            <div id="slogan-element" class="welcome"></div>
             <div id="report-element" class="box"></div>
         </div>
     </main>

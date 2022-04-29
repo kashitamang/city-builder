@@ -27,7 +27,7 @@ Additional considerations:
 
 TODO
 
-BUILD HTML in index.html
+🎁 BUILD HTML in index.html
 ✅ title 
 ✅ dropdowns
 ✅ picture divs
@@ -36,13 +36,12 @@ BUILD HTML in index.html
 ✅ slogan divs
 ✅ reports div
 
-BUILD CSS in home.css
+🎁  BUILD CSS in home.css
 ✅ grab images
 ✅ assign to css property via ID's with background-image asset
 ✅ build proper containers for divs to display default images in 
 
-BUILD JAVASCRIPT in app.js
-
+🎁  BUILD JAVASCRIPT in app.js
 // import functions and grab DOM elements
 ✅ declare 3 dropdown variables
 ✅ declare 3 elements for city div
@@ -60,34 +59,48 @@ BUILD JAVASCRIPT in app.js
 ✅ slogan 
 
 //event listeners for type dropdown on 'change'
-✅get value of type dropdown (log value of dropdown to the console)
-✅update the DOM for the typecount state
-✅update the DOM for the type picture (use style.backgroundImage on typeEl)
-✅update the state to show the new count of types by calling the displayStats() function 
+✅ get value of type dropdown (log value of dropdown to the console)
+✅ update the DOM for the typecount state
+✅ update the DOM for the type picture (use style.backgroundImage on typeEl)
+✅ update the state to show the new count of types by calling the displayStats() function 
 
 //event listeners for environment dropdown on 'change'
-✅get value of environment dropdown (log value of dropdown to the console)
-✅update the DOM for the environmentcount state
-✅update the DOM for the type picture (use style.backgroundImage on environmentEl)
-✅update the state to show the new count of types by calling the displayStats() function 
+✅ get value of environment dropdown (log value of dropdown to the console)
+✅ update the DOM for the environmentcount state
+✅ update the DOM for the type picture (use style.backgroundImage on environmentEl)
+✅ update the state to show the new count of types by calling the displayStats() function 
 
 //event listeners for apocalypse dropdown on 'change'
-✅get value of apocalypse dropdown (log value of dropdown to the console)
-✅update the DOM for the apocalypsecount state
-✅update the DOM for the type picture (use style.backgroundImage on apocalypseEl)
-✅update the state to show the new count of types by calling the displayStats() function 
+✅ get value of apocalypse dropdown (log value of dropdown to the console)
+✅ update the DOM for the apocalypsecount state
+✅ update the DOM for the type picture (use style.backgroundImage on apocalypseEl)
+✅ update the state to show the new count of types by calling the displayStats() function 
 
 //event listeners for button on 'click'
-✅get value of slogan
-✅push that value to new array in state
-✅clear out the forms input.value by assigning to an empty string
+✅ get value of slogan
+✅ push that value to new array in state
+✅ clear out the forms input.value by assigning to an empty string
 ✅update the dom to show the new slogans byt calling displaySlogans() function;
 
 //create displayStats() Function
-✅text content of the report el to tell thr use ho many times ✅they have changed a piece of state using template literals 
+✅  text content of the report el to tell thr use ho many times ✅they have changed a piece of state using template literals 
 
 //create displaySlogans() Function
-✅clear out DOM for the currently displayed slogans 
-✅loop through each slogan in state 
-✅for each new slogan create and html element with the slogan as its text content
-✅append that HTML element to the cleared-out DOM
+✅  clear out DOM for the currently displayed slogans 
+✅  loop through each slogan in state 
+✅  for each new slogan create and html element with the slogan as its text content
+✅  append that HTML element to the cleared-out DOM
+
+🎁  STRETCH GOALS
+✅  Add the option for the user to name the city
+✅  store the name in state
+✅ Display that name in big letters at the top
+-Additionally, when displaying slogans, every slogan should have the name of the city concatenated before it, like so: 'Portland: the city that works!', 'Portland: the big apple'.
+
+Make three arrays of objects of this kind of shape: [ { display: "Future City", value: "1" }, { display: "Big City", value: "2" }, { display: "Small City", value: "3" ]. Now, instead of hard coding your dropdown options, generate them dynamically by looping over these arrays.
+
+Wrap the slogan input and button in a form tag and use a 'submit' handler with the new FormData() constructor to get data from the input. (Hint: Look up e.preventDefault() and why it's useful in this case)
+
+Use a radio button (probably the most challenging form input) to change between 'night mode' and 'day mode'. When in night mode, only show images of night-time and vice-versa.
+Add a selectable background noise to your city (traffic, birds, coffeeshop, for example)
+In addition to keeping track of the number of times each dropdown was changed, keep track of (and display to the user) a "history" of those changes.

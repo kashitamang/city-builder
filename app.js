@@ -15,12 +15,19 @@ const sloganEl = document.getElementById('slogan-element');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 
+const nameEl = document.getElementById('name-element');
+const nameInput = document.getElementById('name-input');
+const nameButton = document.getElementById('name-button');
+
+console.log(nameEl);
+
 // let state
 let typeCount = 0;
 let environmentCount = 0;
 let apocalypseCount = 0;
 
 let slogans = [];
+let names = [];
 
 // set event listeners 
 
@@ -69,9 +76,20 @@ sloganButton.addEventListener('click', () => {
     console.log(sloganInput.value);
 //clear out the form input value so its empty to the user 
     sloganInput.value = '';
-    sloganEl.classList.remove('disappear');
 //update state by calling display Slogans function
     displaySlogans();
+});
+
+// get user input
+nameButton.addEventListener('click', () => {
+  //get value of slogan and push to new name array in state
+    nameEl.textContent = '';
+    names.push(nameInput.value);
+    console.log(nameInput.value);
+    nameEl.textContent = `this is ${nameInput.value}`;
+  //clear out the form input value so its empty to the user 
+    nameInput.value = '';
+  //update state by calling display displaySlogan function
 });
 
 // use user input to update state 
@@ -94,7 +112,7 @@ function displaySlogans() {
         const newSlogans = document.createElement('div');
 //append that HTML element to the cleared-out DOM 
         document.getElementById('slogan-element').appendChild(newSlogans);
-        newSlogans.textContent = `you submitted a slogan of: "${sloganInput}"`;
+        newSlogans.textContent = `where the slogan is..."${sloganInput}"!`;
     }
 
 }

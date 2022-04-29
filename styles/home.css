@@ -66,18 +66,26 @@ input {
 }
 
 select {
-    background-color: white;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 10px;
-    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 15px;
+    width: 340px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
-button {
+#slogan-button {
     background-color: white;
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding-left: 10px;
+    padding-left: 15px;
+    border: none;
+}
+#name-button {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
     border: none;
 }
 
@@ -89,3 +97,11 @@ select:hover {
     color: rgb(176, 176, 176)
 }
 
+.welcome {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
+}
