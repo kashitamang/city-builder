@@ -20,8 +20,11 @@
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
-
     }
+
+.bg:hover {
+    opacity: 0.6;
+}
 
 #type {
     background-image: url('../assets/urban.jpeg');
@@ -38,10 +41,6 @@
     border-radius: 15px;
 }
 
-.disappear {
-    content: "say it loud and proud...";
-    display: none;
-}
 
 input {
     background-color: white;
@@ -75,3 +74,4 @@ button:hover {
 select:hover {
     color: rgb(176, 176, 176)
 }
+
