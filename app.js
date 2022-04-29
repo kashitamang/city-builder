@@ -1,6 +1,5 @@
 // import functions and grab DOM elements
 
-
 const typeDropdown = document.getElementById('type-dropdown');
 const environmentDropdown = document.getElementById('environment-dropdown');
 const apocalypseDropdown = document.getElementById('apocalypse-dropdown');
@@ -13,13 +12,10 @@ const reportEl = document.getElementById('report-element');
 
 const sloganEl = document.getElementById('slogan-element');
 const sloganInput = document.getElementById('slogan-input');
-const sloganButton = document.getElementById('slogan-button');
 
 const nameEl = document.getElementById('name-element');
 const nameInput = document.getElementById('name-input');
 const nameButton = document.getElementById('name-button');
-
-console.log(nameEl);
 
 // let state
 let typeCount = 0;
@@ -28,8 +24,6 @@ let apocalypseCount = 0;
 
 let slogans = [];
 let names = [];
-
-// set event listeners 
 
 //event listener for type dropdown on 'change'
 typeDropdown.addEventListener('change', () => {
@@ -68,9 +62,6 @@ apocalypseDropdown.addEventListener('change', () => {
     displayStats();
 });
 
-
-
-
 // get user input
 nameButton.addEventListener('click', () => {
   //get value of slogan and push to new name array in state
@@ -89,11 +80,7 @@ nameButton.addEventListener('click', () => {
     displaySlogans();
 });
 
-// use user input to update state 
-// update DOM to reflect the new state
-
 //report stats
-
 function displayStats(){
 //text content of the reportEl to tell the user how many times they have changed the dropdown menu items
     reportEl.textContent = `You have changed your city type ${typeCount} times, the environment ${environmentCount} times, and the apocalypse ${apocalypseCount} times.`;

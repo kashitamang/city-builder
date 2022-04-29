@@ -5,8 +5,8 @@
 @viewport {
     width: device-width ;
     zoom: 1.0 ;
-  }
-  
+}
+
 * {
     font-family: 'Courier Prime', monospace;
 }
@@ -65,7 +65,7 @@ input {
 }
 
 #name-input {
-    padding-left: 84px;
+    padding-left: 80px;
 }
 
 select {
