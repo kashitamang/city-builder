@@ -17,8 +17,6 @@
     height: 200px;
     width: 1000px;
     grid-gap: 50px 50px;
-    object-fit: cover;
-    object-position: bottom;
 }
 
 .bg {
@@ -101,4 +99,11 @@ select:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+}
+
+audio {
+    width: 97px;
+}
+.hide {
+    display: none;
 }
