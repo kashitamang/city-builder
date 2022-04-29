@@ -112,7 +112,7 @@ function displaySlogans() {
         const newSlogans = document.createElement('div');
 //append that HTML element to the cleared-out DOM 
         document.getElementById('slogan-element').appendChild(newSlogans);
-        newSlogans.textContent = `where the slogan is..."${sloganInput}"!`;
+        newSlogans.textContent = `"${sloganInput}"`;
     }
 
 }
