@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+  
 * {
     font-family: 'Courier Prime', monospace;
 }
@@ -49,20 +54,18 @@
     border-radius: 15px;
 }
 
-.blink {
-    -webkit-animation: blink 1s step-end infinite;
-    -moz-animation: blink 1s step-end infinite;
-    -o-animation: blink 1s step-end infinite;
-    animation: blink 1s step-end infinite;
-}
 
 input {
     background-color: white;
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding-left: 10px;
+    padding-left: 62px;
     border: none;
     border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+#name-input {
+    padding-left: 84px;
 }
 
 select {
@@ -74,23 +77,17 @@ select {
     object-position: bottom;
 }
 
-#slogan-button {
-    background-color: white;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 15px;
-    border: none;
-}
 #name-button {
     background-color: white;
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding-left: 35px;
+    padding-left: 150px;
     border: none;
+    font-size: xx-large;
 }
 
 button:hover {
-    color: rgb(176, 176, 176);
+    color: chartreuse;
 }
 
 select:hover {

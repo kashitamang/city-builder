@@ -95,7 +95,7 @@ TODO
 ✅  Add the option for the user to name the city
 ✅  store the name in state
 ✅ Display that name in big letters at the top
--Additionally, when displaying slogans, every slogan should have the name of the city concatenated before it, like so: 'Portland: the city that works!', 'Portland: the big apple'.
+✅ Additionally, when displaying slogans, every slogan should have the name of the city concatenated before it, like so: 'Portland: the city that works!', 'Portland: the big apple'.
 
 Make three arrays of objects of this kind of shape: [ { display: "Future City", value: "1" }, { display: "Big City", value: "2" }, { display: "Small City", value: "3" ]. Now, instead of hard coding your dropdown options, generate them dynamically by looping over these arrays.
 

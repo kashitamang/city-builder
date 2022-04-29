@@ -69,16 +69,7 @@ apocalypseDropdown.addEventListener('change', () => {
 });
 
 
-// get user input
-sloganButton.addEventListener('click', () => {
-//get value of slogan and push to new slogan array in state
-    slogans.push(sloganInput.value);
-    console.log(sloganInput.value);
-//clear out the form input value so its empty to the user 
-    sloganInput.value = '';
-//update state by calling display Slogans function
-    displaySlogans();
-});
+
 
 // get user input
 nameButton.addEventListener('click', () => {
@@ -86,10 +77,16 @@ nameButton.addEventListener('click', () => {
     nameEl.textContent = '';
     names.push(nameInput.value);
     console.log(nameInput.value);
-    nameEl.textContent = `this is ${nameInput.value}`;
+    nameEl.textContent = `this is ${nameInput.value} where we say " ${sloganInput.value} "!`;
   //clear out the form input value so its empty to the user 
     nameInput.value = '';
   //update state by calling display displaySlogan function
+    slogans.push(sloganInput.value);
+    console.log(sloganInput.value);
+//clear out the form input value so its empty to the user 
+    sloganInput.value = '';
+//update state by calling display Slogans function
+    displaySlogans();
 });
 
 // use user input to update state 
@@ -112,7 +109,7 @@ function displaySlogans() {
         const newSlogans = document.createElement('div');
 //append that HTML element to the cleared-out DOM 
         document.getElementById('slogan-element').appendChild(newSlogans);
-        newSlogans.textContent = `where we say "${sloganInput}"`;
+        newSlogans.textContent = `slogan added ${sloganInput}`;
     }
 
 }
