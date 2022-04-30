@@ -1,1 +1,109 @@
 /* add home page styles here */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+}
+
+* {
+    font-family: 'Courier Prime', monospace;
+}
+
+.city {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    width: 1000px;
+    grid-gap: 50px 50px;
+}
+
+.bg {
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+    }
+
+.bg:hover {
+    opacity: 0.6;
+}
+
+#type {
+    background-image: url('../assets/urban.jpeg');
+    border-radius: 15px;
+}
+
+#environment {
+    background-image: url('../assets/jungle.jpeg');
+    border-radius: 25px;
+}
+
+#apocalypse {
+    background-image: url('../assets/lightning.jpeg');
+    border-radius: 15px;
+}
+
+.box {
+    background-color:rgb(118, 118, 118);
+    color: chartreuse;
+    padding: 2px 50px 50px 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+input {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 62px;
+    border: none;
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+#name-input {
+    padding-left: 80px;
+}
+
+select {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 15px;
+    width: 340px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#name-button {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    border: none;
+    font-size: xx-large;
+}
+
+button:hover {
+    color: chartreuse;
+}
+
+select:hover {
+    color: rgb(176, 176, 176)
+}
+
+.welcome {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
+}
+
+audio {
+    width: 100px;
+}
+.hide {
+    display: none;
+}

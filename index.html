@@ -9,62 +9,89 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>create your own city</title>
 </head>
-
+<header>
+    <h2>create your own city</h2>
+</header>
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
-        </div>
-    </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
-        </section>
+        <br>
+        <h3>choose your options...</h3>
+        <div class="picker">
+            <label>
+                city type
+                <select id="type-dropdown">
+                    <option value="urban">urban</option>
+                    <option value="suburban">suburban</option>
+                    <option value="country">country</option>
+                </select>
+                <br>
+            </label>
+            <label>
+                environment
+                <select id="environment-dropdown">
+                    <option value="jungle">jungle</option>
+                    <option value="desert">desert</option>
+                    <option value="mountain">mountain</option>
+                </select>
+                <br>
+            </label>
+                apocalyptic fate
+            <label>
+                <select id="apocalypse-dropdown">
+                    <option value="lightning">lightning</option>
+                    <option value="snow">snow</option>
+                    <option value="ibs">chronic ibs</option>
+                </select>
+                <br>
+            </label>
+            <label>
+                city name
+                <input type="text" id="name-input" >
+            </label>
+            <br>
+            <br>
+            <label>
+                city slogan
+                <input type="text" id="slogan-input">
+                <br>
+                <br>
+                <button id="name-button">add</button>
+            </label>
+        </div>
+        <h2 id="name-element" class="welcome"></h2>
+            <div>
+            <audio id="lightning-sound" controls class="hide">
+                <source src="./assets/lightning.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="ibs-sound" controls class="hide">
+                <source src="./assets/ibs.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="snow-sound" controls class="hide">
+                <source src="./assets/snow.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <br>
+        <div> 
+            <div class="city">
+                <div class="type-div bg" id="type"></div>
+                <div class="environment-div bg" id="environment"></div>
+                <div class="apocalypse-div bg" id="apocalypse"></div>
+            </div>
+        </div>
+        <br>
+        <div id="stats">
+            <div id="slogan-element" class="box"></div>
+            <br>
+            <div id="report-element" class="box"></div>
+        </div>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 aspiring software engineer</div>
     </footer>
 
     <script type="module" src="./app.js"></script>

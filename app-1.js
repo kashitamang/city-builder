@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 
+
 const typeDropdown = document.getElementById('type-dropdown');
 const environmentDropdown = document.getElementById('environment-dropdown');
 const apocalypseDropdown = document.getElementById('apocalypse-dropdown');
@@ -12,14 +13,13 @@ const reportEl = document.getElementById('report-element');
 
 const sloganEl = document.getElementById('slogan-element');
 const sloganInput = document.getElementById('slogan-input');
+const sloganButton = document.getElementById('slogan-button');
 
 const nameEl = document.getElementById('name-element');
 const nameInput = document.getElementById('name-input');
 const nameButton = document.getElementById('name-button');
 
-const lightningSound = document.getElementById('lightning-sound');
-const ibsSound = document.getElementById('ibs-sound');
-const snowSound = document.getElementById('snow-sound');
+console.log(nameEl);
 
 // let state
 let typeCount = 0;
@@ -29,6 +29,7 @@ let apocalypseCount = 0;
 let slogans = [];
 let names = [];
 
+// set event listeners 
 
 //event listener for type dropdown on 'change'
 typeDropdown.addEventListener('change', () => {
@@ -54,9 +55,7 @@ environmentDropdown.addEventListener('change', () => {
     displayStats();
 });
 
-//set default to state 
-lightningSound.classList.remove('hide');
-
+//event listeners for apocalypseDropdown on 'change'
 //event listener for environmentDropdown on 'change'
 apocalypseDropdown.addEventListener('change', () => {
   //get value of type dropdown (log value of dropdown to the console)
@@ -67,30 +66,12 @@ apocalypseDropdown.addEventListener('change', () => {
     apocalypseEl.style = `background-image: url(./assets/${apocalypseDropdown.value}.jpeg)`;
   //update the state to show the new count of types by calling the displayStats() function
     displayStats();
-  //add 'hide class for all sounds on click
-    snowSound.classList.add('hide');
-    lightningSound.classList.add('hide');
-    ibsSound.classList.add('hide');
-//set sound to corresponsing apocalyptic fate by removing .hide class on click 
-    if (apocalypseDropdown.value === 'lightning'){
-        lightningSound.classList.remove('hide');
-    } else if (apocalypseDropdown.value === 'snow'){
-        snowSound.classList.remove('hide');
-    } else {
-        ibsSound.classList.remove('hide');
-    }
 });
 
+
 // get user input
-nameButton.addEventListener('click', () => {
-  //get value of slogan and push to new name array in state
-    nameEl.textContent = '';
-    names.push(nameInput.value);
-    console.log(nameInput.value);
-    nameEl.textContent = `this is ${nameInput.value} where we say " ${sloganInput.value}! " and it sounds like: `;
-  //clear out the form input value so its empty to the user 
-    nameInput.value = '';
-  //update state by calling display displaySlogan function
+sloganButton.addEventListener('click', () => {
+//get value of slogan and push to new slogan array in state
     slogans.push(sloganInput.value);
     console.log(sloganInput.value);
 //clear out the form input value so its empty to the user 
@@ -99,8 +80,23 @@ nameButton.addEventListener('click', () => {
     displaySlogans();
 });
 
-///////////// ALL FUNCTIONS //////////////
+// get user input
+nameButton.addEventListener('click', () => {
+  //get value of slogan and push to new name array in state
+    nameEl.textContent = '';
+    names.push(nameInput.value);
+    console.log(nameInput.value);
+    nameEl.textContent = `this is ${nameInput.value}`;
+  //clear out the form input value so its empty to the user 
+    nameInput.value = '';
+  //update state by calling display displaySlogan function
+});
+
+// use user input to update state 
+// update DOM to reflect the new state
+
 //report stats
+
 function displayStats(){
 //text content of the reportEl to tell the user how many times they have changed the dropdown menu items
     reportEl.textContent = `You have changed your city type ${typeCount} times, the environment ${environmentCount} times, and the apocalypse ${apocalypseCount} times.`;
@@ -116,7 +112,7 @@ function displaySlogans() {
         const newSlogans = document.createElement('div');
 //append that HTML element to the cleared-out DOM 
         document.getElementById('slogan-element').appendChild(newSlogans);
-        newSlogans.textContent = `slogan added ${sloganInput}`;
+        newSlogans.textContent = `"${sloganInput}"`;
     }
 
 }
