@@ -83,7 +83,8 @@ TODO
 ✅update the dom to show the new slogans byt calling displaySlogans() function;
 
 //create displayStats() Function
-✅  text content of the report el to tell thr use ho many times ✅they have changed a piece of state using template literals 
+✅  text content of the report el to tell thr use ho many times 
+✅they have changed a piece of state using template literals 
 
 //create displaySlogans() Function
 ✅  clear out DOM for the currently displayed slogans 
@@ -101,5 +102,4 @@ TODO
 ✅ find sound effects 
 ✅ download to assets 
 ✅ embed in html
--style with css and tun visibility on and off on 'click' of apocalypse
--keep track of number of changes
+✅ style with css and tun visibility on and off on 'click' of apocalypse
