@@ -36,7 +36,7 @@
 
 #environment {
     background-image: url('../assets/jungle.jpeg');
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 #apocalypse {
@@ -102,7 +102,7 @@ select:hover {
 }
 
 audio {
-    width: 97px;
+    width: 100px;
 }
 .hide {
     display: none;
