@@ -120,7 +120,3 @@ function displaySlogans() {
     }
 
 }
-
-function displaySound(){
-
-}
